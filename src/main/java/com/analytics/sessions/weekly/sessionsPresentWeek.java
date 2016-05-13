@@ -1,7 +1,6 @@
 package com.analytics.sessions.weekly;
 
 import java.io.IOException;
-import java.util.Calendar;
 import java.util.List;
 
 import com.analytics.utils;
@@ -33,10 +32,5 @@ public class sessionsPresentWeek extends utils {
 		      System.out.println("No results found");
 		    }
 		  }
-	  
-	  private static int getDayOfWeek(){
-		  Calendar cal = Calendar.getInstance();
-			return (cal.get(Calendar.DAY_OF_WEEK)-1);
-	  }
 
 }

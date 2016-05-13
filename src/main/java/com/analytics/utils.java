@@ -46,4 +46,8 @@ public abstract class utils {
 		    calendar.set(Calendar.MILLISECOND, 0);
 		    return calendar.getTimeInMillis()/1000;
 		}
+	  public int getDayOfWeek(){
+		  Calendar cal = Calendar.getInstance();
+			return (cal.get(Calendar.DAY_OF_WEEK)-1);
+	  }
 	}

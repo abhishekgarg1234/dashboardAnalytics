@@ -1,7 +1,6 @@
 package com.analytics.sessionDuration.weekly;
 
 import java.io.IOException;
-import java.util.Calendar;
 import java.util.List;
 
 import com.analytics.utils;
@@ -35,9 +34,4 @@ public class sessionDurationLastWeek extends utils {
 		    }
 		  }
 	  
-	  private static int getDayOfWeek(){
-		  Calendar cal = Calendar.getInstance();
-			return (cal.get(Calendar.DAY_OF_WEEK)-1);
-	  }
-
 }

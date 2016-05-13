@@ -3,7 +3,6 @@ package com.analytics.controller;
 import java.io.File;
 import java.io.IOException;
 
-import com.analytics.sessions.hourly.todaySessionHourly;
 import com.analytics.sessions.weekly.sessionsPresentWeek;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
@@ -32,8 +31,8 @@ public class HelloAnalytics {
 //      System.out.println("First Profile Id");
       Analytics analytics = initializeAnalytics();
 
-//      String profile = getFirstProfileId(analytics);
-      String profile = "119715910";
+      String profile = getFirstProfileId(analytics);
+//      String profile = "119715910";
 //      System.out.println("First Profile Id: "+ profile);
 //      sessionsHourly s1=new sessionsHourly();
 //      s1.calculation(s1.getResults(analytics, profile));
